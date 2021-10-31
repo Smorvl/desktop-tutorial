@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-hello
     steps:
       -
         name: Checkout
@@ -22,5 +22,5 @@ jobs:
       -
          name: Build, tag, and push image to Yandex Cloud Container Registry
          run: |
-          docker build -t cr.yandex/b1g11l24p26u7quk5s57/ubuntu:latest .
-          docker push cr.yandex/b1g11l24p26u7quk5s57/ubuntu:latest
+          docker build -t cr.yandex/b1g11l24p26u7quk5s57/ubuntu:hello .
+          docker push cr.yandex/b1g11l24p26u7quk5s57/ubuntu:hello
